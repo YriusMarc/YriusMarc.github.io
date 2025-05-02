@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marc YRIUS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="polices.css">
+    <link rel="data" href="mail.php">
+    <script defer src="script.js"></script>
+</head>
+<body id="body">
+
+    <div class="scroll-zone"></div>
+    <!-- <p class="scroll">^ Faites défiler ^</p> -->
+
+    <header id="header">
+        <h1 id="logoHeader">Marc Yrius</h1>
+    </header>
+
+    <div class="navigateur" id="navigateur">
+        <img id="imgMoi" src="src/person_bleu.svg" alt="moi" onclick="navigateur(1)" >
+        <img id="imgEtu" src="src/études.svg" alt="parcours" onclick="navigateur(2)">
+        <img id="imgPro" src="src/projets.svg" alt="projets" onclick="navigateur(3)">
+        <img id="imgCon" src="src/chat.svg" alt="contacts" onclick="navigateur(4)">
+    </div>
+<main class="main">
+    <div class="space"></div>
+        <div class="display" id="display">
+            <div class="pageMoi">
+                <div class="textMoi" style="grid-area: box-1;">
+                <h1>Salut, Je m'appelle Marc...</h1>
+                <h4>YRIUS Marc</h4>
+                <p>À 23 ans, je suis actuellement en année sabbatique après avoir validé ma deuxième année de licence à l'Université Claude Bernard à Lyon.
+                    Passionné par le développement web, j’ai profité de cette année pour approfondir mes connaissances dans des langages tels que HTML, CSS, JavaScript et PHP, ainsi que dans la gestion de bases de données. J’ai également renforcé ma maîtrise de Figma, que j’utilise régulièrement pour concevoir des maquettes interactives.
+                </p>
+                <p>Bien que je n’aie pas encore d'expérience professionnelle sous forme de stage, cette période m’a permis de consolider mes compétences techniques de manière autonome.
+                    Je souhaite désormais poursuivre mon parcours en intégrant une année de Bachelor en Développement Web à l’ESD, afin de perfectionner mes acquis et de me professionnaliser dans ce domaine.
+                </p>
+            </div>
+            <div class="imageMoi" style="grid-area: box-3;">
+                <img class="école" src="src/map bordeaux.jpg" alt="">
+                <img src="src/esd.jpg" alt="">
+            </div>
+            </div>
+        </div>
+        
+
+        
+        <div id="modal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <img id="modal-image" src="" alt="">
+              <h2 id="modal-title"></h2>
+              <p id="modal-description"></p>
+              <button id="modalButton" onclick="">Voir</button>
+            </div>
+          </div>
+        <div id="space"></div>
+        
+        
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ <div class="displayMoi" id="displayMoi">
+        <div class="pageMoi">
+            <div class="textMoi" style="grid-area: box-1;">
+            <h1>Salut, Je m'appelle Marc...</h1>
+            <h4>YRIUS Marc</h4>
+            <p>À 23 ans, je suis actuellement en année sabbatique après avoir validé ma deuxième année de licence à l'Université Claude Bernard à Lyon.
+                Passionné par le développement web, j’ai profité de cette année pour approfondir mes connaissances dans des langages tels que HTML, CSS, JavaScript et PHP, ainsi que dans la gestion de bases de données. J’ai également renforcé ma maîtrise de Figma, que j’utilise régulièrement pour concevoir des maquettes interactives.
+            </p>
+            <p>Bien que je n’aie pas encore d'expérience professionnelle sous forme de stage, cette période m’a permis de consolider mes compétences techniques de manière autonome.
+                Je souhaite désormais poursuivre mon parcours en intégrant une année de Bachelor en Développement Web à l’ESD, afin de perfectionner mes acquis et de me professionnaliser dans ce domaine.
+            </p>
+        </div>
+        <div class="imageMoi" style="grid-area: box-3;">
+            <img class="école" src="src/map bordeaux.jpg" alt="">
+            <img src="src/esd.jpg" alt="">
+        </div>
+        </div>
+ </div>
+
+
+ <div class="displayLicence" id="displayLicence">
+    <div class="pageLC">
+ <div class="licence">
+    <h1>Licence Informatique</h1>
+    <div class="gridLicence">
+    <div style="grid-area: box-l1;">
+        <h2 class="licenceT1">Licence 1 (2021)</h2>
+        <p class="licenceP1">uinversité d'Orléans "Portail: Info, Bio, Maths" (obtention Info-Bio)</p>
+    </div>
+    <div style="grid-area: box-l2;">
+        <h2 class="licenceT2">Licence 2 (2024)</h2>
+        <p class="licenceP2">uinversité Claude Bernard "Informatique"</p>
+    </div>
+    </div>
+    <div class="compétence">
+        <h1>Compétences</h1>
+        <div class="gridCompétence">
+        <div class="i1" style="grid-area: box-c1;">
+            <img src="src/icons8-html-250.png" alt="">
+            <span><p class="compT">HTML</p></span>
+        </div>
+        <div class="i2" style="grid-area: box-c2;">
+            <img src="src/icons8-css-250.png" alt="">
+            <p class="compT">CSS</p>
+        </div>
+        <div class="i3" style="grid-area: box-c3;">
+            <img src="src/icons8-js-250.png" alt="">
+            <p class="compT">JavaScript</p>
+        </div>
+        <div class="i4" style="grid-area: box-c4;">
+            <img src="src/icons8-php-250.png" alt="">
+            <p class="compT">PHP</p>
+        </div>
+        <div class="i5" style="grid-area: box-c5;">
+            <img src="src/icons8-postgresql-250.png" alt="">
+            <p class="compT">SQL</p>
+        </div>
+        <div class="i6" style="grid-area: box-c6;">
+            <img src="src/icons8-wordpress-250.png" alt="">
+            <p class="compT">WordPress</p>
+        </div>
+        <div class="i7" style="grid-area: box-c7;">
+            <img src="src/icons8-figma-250.png" alt="">
+            <p>Figma</p>
+        </div>
+        <div class="i8" style="grid-area: box-c8;">
+            <img src="src/icons8-react-native-250.png" alt="">
+            <p class="compT">React</p>
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="displayProjets" id="displayProjets">
+<div class="projets">
+    <img class="pi1" src="src/Lucie.png" alt="Lucie" style="grid-area: box-p1;" onclick="showModal('img1')">
+    <img class="pi2" src="src/jeune soin .png" alt="jeuneSoin" style="grid-area: box-p2;" onclick="showModal('img2')">
+    <img class="pi3" src="src/GestioTache.png" alt="GestioTache" style="grid-area: box-p3;" onclick="showModal('img3')">
+    <img class="pi4" src="src/projetBDW.png" alt="projetBDW" style="grid-area: box-p4;" onclick="showModal('img4')">
+    <img class="pi5" src="src/suika affiche.jpg" alt="suika" style="grid-area: box-p5;" onclick="showModal('img5')">
+    <img class="pi6" src="src/Projet Stats.png" alt="Projet Stats" style="grid-area: box-p6;" onclick="showModal('img6')">
+</div>
+</div>
+
+
+<div class="displayContact" id="displayContact">
+    <h1 class="titleContact">↓ Contactez-moi ↓</h1>
+    <form id="contact-form" action="mailto:marcyrius6@gmail.com" method="POST" enctype="text/plain">
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="Prénom" required>
+      
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="Nom" required>
+      
+        <label for="message">Message :</label>
+        <textarea id="message" name="Message" rows="5" required></textarea>
+      
+        <button type="submit">Envoyer</button>
+      </form>
+      
+</div>
+ 
+ 
+ 
+ <div class="space1"></div>
+ </main>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+            <!-- <div class="timeline">
+                    <div class="step active" data-step="Licence" onclick="displayEtude(1)">Licence</div>
+                    <div class="step" data-step="Projets" onclick="displayEtude(2)">Projets</div>
+                </div> -->
+ 
+ 
+ 
+ 
+            <!-- pelicule caméra!!!!!!!!!!!!!!!!!!!!!!
+        <div class="pelicule">
+            <img class="frame" id="frame1" src="src/rectangleBlanc.png" alt="frame1" onclick="displayProjects(1)">
+            <img class="frame" id="frame2" src="src/rectangleBlanc.png" alt="frame2" onclick="displayProjects(2)">
+            <img class="frame" id="frame3" src="src/rectangleBlanc.png" alt="frame3" onclick="displayProjects(3)">
+            <img class="frame" id="frame4" src="src/rectangleBlanc.png" alt="frame4" onclick="displayProjects(4)">
+            <img class="frame" id="frame5" src="src/rectangleBlanc.png" alt="frame5" onclick="displayProjects(5)">
+            <img class="frame" id="frame6" src="src/rectangleBlanc.png" alt="frame6" onclick="displayProjects(6)">
+            <img class="frame" id="frame7" src="src/rectangleBlanc.png" alt="frame7" onclick="displayProjects(7)">
+            <img class="frame" id="frame8" src="src/rectangleBlanc.png" alt="frame8" onclick="displayProjects(8)">
+            <img class="frame" id="frame9" src="src/rectangleBlanc.png" alt="frame9" onclick="displayProjects(8)">
+            <img class="frame" id="frame10" src="src/rectangleBlanc.png" alt="frame10" onclick="displayProjects(10)">
+            <img class="frame" id="frame11" src="src/rectangleBlanc.png" alt="frame11" onclick="displayProjects(11)">
+            <img class="frame" id="frame12" src="src/rectangleBlanc.png" alt="frame12" onclick="displayProjects(12)">
+
+
+            <img class="frame" id="frame1" src="src/rectangleBlanc.png" alt="frame1" onclick="displayProjects(1)">
+            <img class="frame" id="frame2" src="src/rectangleBlanc.png" alt="frame2" onclick="displayProjects(2)">
+            <img class="frame" id="frame3" src="src/rectangleBlanc.png" alt="frame3" onclick="displayProjects(3)">
+            <img class="frame" id="frame4" src="src/rectangleBlanc.png" alt="frame4" onclick="displayProjects(4)">
+            <img class="frame" id="frame5" src="src/rectangleBlanc.png" alt="frame5" onclick="displayProjects(5)">
+            <img class="frame" id="frame6" src="src/rectangleBlanc.png" alt="frame6" onclick="displayProjects(6)">
+            <img class="frame" id="frame7" src="src/rectangleBlanc.png" alt="frame7" onclick="displayProjects(7)">
+            <img class="frame" id="frame8" src="src/rectangleBlanc.png" alt="frame8" onclick="displayProjects(8)">
+            <img class="frame" id="frame9" src="src/rectangleBlanc.png" alt="frame9" onclick="displayProjects(8)">
+            <img class="frame" id="frame10" src="src/rectangleBlanc.png" alt="frame10" onclick="displayProjects(10)">
+            <img class="frame" id="frame11" src="src/rectangleBlanc.png" alt="frame11" onclick="displayProjects(11)">
+            <img class="frame" id="frame12" src="src/rectangleBlanc.png" alt="frame12" onclick="displayProjects(12)">
+            
+       </div> 
+
+       <div class="displayProjects" id="displayProjects">
+            <img class="imgProjects" id="imgProjects" src="" alt="">
+            <p class="descProjects" id="descProjects"></p>
+       </div>
+       
+
+
+    <div class="bande" id="bande" >
+        <p><span class="welcomeT">Bienvenue sur mon portfolio</span><span class="welcome">*</span><span class="welcomeT">Lucie Thiebault</span><span class="welcome">*</span>
+        <span class="welcomeT">Bienvenue sur mon portfolio</span><span class="welcome">*</span><span class="welcomeT">Lucie Thiebault</span><span class="welcome">*</span>
+        <span class="welcomeT">Bienvenue sur mon portfolio</span><span class="welcome">*</span><span class="welcomeT">Lucie Thiebault</span><span class="welcome">*</span>
+        <span class="welcomeT">Bienvenue sur mon portfolio</span><span class="welcome">*</span><span class="welcomeT">Lucie Thiebault</span><span class="welcome">*</span>
+        </p>
+    </div>
+
+
+
+
+    <div class="bento" id="bento">
+        <section id="presentation"></section>
+        <div class="présentation" id="présentation">
+            <img class="idPic" id="idPic" src="src/Green Orange Modern Healthy Food Restaurant Logo.png" alt="">
+            <div class="textPres">
+            <h2 class="titlePres">Présentation</h2> 
+            <p>🎬 Salut, moi c’est Lucie Thiebault, 23 ans et passionnée par l’image sous toutes ses formes (sauf floue, on est d’accord).
+                Après un BAC+3 en com' digitale, j’ai décidé de me lancer dans une formation audiovisuelle pour devenir vidéaste !
+                Mon objectif ? Raconter des histoires en images, faire vibrer, sourire, rêver... et parfois juste faire un montage carré qui claque.
+                Je suis actuellement à la recherche d’une alternance dans l’audiovisuel pour ma deuxième année de formation. Si tu cherches quelqu’un de curieux, motivé, un peu geek sur les bords et qui adore créer... on devrait bien s’entendre 😉
+                </p>
+            </div>
+        </div>
+
+    <div class="boutonPres">
+        <div class="parentPres">
+            <div class="texts" id="textF">
+                <div class="divFormation" id="divFormation">
+                    <h2 class="titles" id="titleFormation" onclick="displayText(1)"> Formation </h2>  
+                </div>
+
+                    <div class="displayTextF" id="displayTextF">
+
+                    </div>
+              </div>
+
+              <div class="texts" id="textE">
+                <div class="divExperience" id="divExperience">
+                    <h2 class="titles" id="titleExperience" onclick="displayText(2)"> Expérience </h2>
+                </div>
+                    <div class="displayTextE" id="displayTextE">
+
+                    </div>
+                </div>
+
+                <div class="texts" id="textL">
+                <div class="divLogiciel" id="divLogiciel">
+                    <h2 class="titles" id="titleLogiciel" onclick="displayText(3)"> Logiciel </h2>
+                </div>
+                    
+                    <div class="displayTextL" id="displayTextL">
+                        
+                    </div>
+                </div>
+
+            </div>
+            
+
+                    
+
+            </div>
+    </div>
+    </div>
+    <div class="page3">
+
+    <div class="compétence">
+        <section id="competence"></section>
+            <h3 class="titleCompétence">COMPETENCES PROFESSIONNELLES</h3>
+
+
+    </div>
+
+    <div class="showReel">
+        <section id="showreel"></section>
+        <h3 class="titleShowReel">SHOWREEL</h3>
+        <div class="videoShowReel">
+        <video id="videoSR" controls>
+            <source src="src/Showreel_LucieT.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la balise vidéo.
+          </video>
+
+        </div>
+    </div>
+    
+    <div class="contact">
+        <h3 class="titleContact">CONTACT</h3>
+        <p class="refContact">0695604079 - luciethiebault78@gmail.com - Bordeaux 33100</p>
+    </div>
+
+    </div>
+
+
+
+
+</div>
+</main>
+
+
+
+
+
+<div class="displayTextEbis" id="displayTextEbis">
+    <ul>
+        <li>
+            <h4 class="titleClic">
+                Chargée de communication en alternance
+            </h4>
+            <p class="lieuxE"><span class="date" id="A2025">2025</span>ACF Alternance Conseil Formation - Bordeaux (33)</p>
+            <p class="descE">
+                Animation de communauté sur les réseaux sociaux
+                Production et création de contenus vidéos/photos
+            </p>
+        </li>
+        <li>
+            <h4 class="titleClic">
+                Chargée de communication digitale en alternance
+            </h4>
+            <p class="lieuxE"><span class="date" id="A2022-2023">2022-2023</span>Verre & Transparence - Avignon (84)</p>
+            <p class="descE">
+                Animation de communauté sur les réseaux sociaux
+                Amélioration de la présence digitale de la société
+            </p>
+        </li>
+        <li>
+            <h4 class="titleClic">
+                Stage en communication interne 
+            </h4>
+            <p class="lieuxE"><span class="date" id="A2022">2022</span>Freysinnet, Rueil-Malmaison (92)</p>
+            <p class="descE">
+                Mise en place d’une photothèque interne :
+                récupération, séléction et indexation des photos
+            </p>
+        </li>
+        <li>
+            <h4 class="titleClic">
+                Stage en communication
+            </h4>
+            <p class="lieuxE"><span class="date" id="A2021">2021</span>Terre Armée, Rueil-Malmaison (92)</p>
+            <p class="descE">
+                Veille stratégique sur l’utilisation des hashtags sur LinkedIn
+            </p>
+        </li>
+    </ul>
+</div>
+
+
+<div class="displayTextFbis" id="displayTextFbis">
+    <ul>
+        <li>
+            <h4 class="titleClic">
+                Formation Montage vidéo/VFX
+            </h4>
+            <p class="lieuxF"><span class="dateF" id="A2024-2026">2024-2026</span>MJM Graphic Design, Bordeaux (33)</p>
+            <p class="descF">
+                Titre RNCP niv 5
+            </p>
+        </li>
+        <li>
+            <h4 class="titleClic">
+                Licence Professionnelle E-commerce et Marketing Numérique
+            </h4>
+            <p class="lieuxF"><span class="dateF" id="A2022-2023">2022-2023</span>IUT d’Avignon,  Avignon (84)</p>
+            <p class="descF">
+                BAC +3
+            </p>
+        </li>
+        <li>
+            <h4 class="titleClic">
+                DUT Info-Com option Informations numériques dans les organsations
+            </h4>
+            <p class="lieuxF"><span class="dateF" id="A2020-2022">2020-2022</span>IUT Nancy-Charllemagne, Nancy (84)</p>
+            <p class="descF">
+                BAC +2
+            </p>
+        </li>
+    </ul>
+</div>
+
+
+<div class="displayTextLbis" id="displayTextLbis">
+    <ul>
+        <li>
+            <span class="logiciel" id="LR">Premiere Pro</span><span class="logiciel" id="RR">Blender(3D)</span>
+        </li>
+        <li>
+            <span class="logiciel" id="LR">After Effects</span><span class="logiciel" id="RR">Reaper (sound design)</span>
+        </li>
+        <li>
+            <span class="logiciel" id="LR">Photoshop</span><span class="logiciel" id="RR">Notion</span>
+        </li>
+        <li>
+            <span class="logiciel" id="LR">Lightroom</span><span class="logiciel" id="RR">Wordpress</span>
+        </li>
+        <li>
+            <span class="logiciel" id="LR">Illustrator</span><span class="logiciel" id="RR">MetaBuisnessSuite</span>
+        </li>
+        <li>
+            <span class="logiciel" id="LR">Canva</span>
+        </li>
+    </ul>
+</div> -->
+
+</body>
+</html>
