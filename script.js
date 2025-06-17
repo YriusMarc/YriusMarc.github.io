@@ -541,10 +541,10 @@ function sleep(ms) {
 function allerAuSite(n) {
   switch (n) {
     case 1:
-      window.location.href = 'https://www.exemple.com';
+      window.location.href = 'https://lucie-thl.github.io/';
       break;
     case 2:
-      window.location.href = 'https://www.exemple.com';
+      window.location.href = 'https://studiovoltaire.github.io/public/';
       break;
     case 3:
       window.location.href = 'https://github.com/ByWizKi/GestioTache';
